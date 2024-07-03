@@ -5,16 +5,20 @@ $msg = "";
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Consulta preparada para eliminar un registro
+    // Consulta preparada para eliminar un registro de la base de datos
     $query = "DELETE FROM carreras WHERE id = ?";
 
     // Preparación de la consulta
     if ($sentenciaPreparada = mysqli_prepare($conexion, $query)) {
-        // Vinculación del parámetro
+        // Vinculación de los parámetro de la consulta
         mysqli_stmt_bind_param($sentenciaPreparada, "i", $id);
 
-        // Ejecución de la consulta
+        // Ejecución de la consulta preparada
         if (mysqli_stmt_execute($sentenciaPreparada)) {
+            /*
+            si la consulta se ejecuto correctamente, mostrara un mensaje y
+            el usuario sera redirigido al menu de "opcarreras.html".
+            */
             $msg = 'La eliminación del registro ha sido exitosa';
             header('Location: ../carreras/SuprimirCarrera.php');
         } else {
@@ -24,10 +28,11 @@ if (isset($_GET['id'])) {
         // Cierre de la sentencia preparada
         mysqli_stmt_close($sentenciaPreparada);
     } else {
+        # si no se ejecuta la consulta preparada, mostrara el siguiente mensaje a continuación
         $msg = 'Error al preparar la consulta';
     }
 }
-
+//cierre de la conexion a la base de datos
 mysqli_close($conexion);
 ?>
 <!doctype html>
