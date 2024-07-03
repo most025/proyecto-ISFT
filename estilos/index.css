@@ -31,23 +31,11 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #de2e01;
 }
-section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h2 {
-  color: #333;
-}
-p {
-  color: #666;
-}
+/* Estilos del formulario.*/
 form {
   margin-top: 20px;
 }
+/* Estilos de los input*/
 input[type="text"],
 input[type="submit"] {
   padding: 10px;
