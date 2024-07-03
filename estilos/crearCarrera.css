@@ -38,17 +38,6 @@ main ul li a:hover {
   background-color: #de2e03;
 }
 
-/* Estilos para la sección de la carrera */
-section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
 /* Estilo para el formulario */
 div form {
   background-color: #fff; /* Define el color de fondo del formulario */
