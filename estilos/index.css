@@ -35,12 +35,3 @@ nav ul li a:hover {
 form {
   margin-top: 20px;
 }
-/* Estilos de los input*/
-input[type="text"],
-input[type="submit"] {
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
