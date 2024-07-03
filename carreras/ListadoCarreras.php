@@ -37,7 +37,7 @@
             <tr>
                 
                 <th>Nombre de la carrera</th>
-                <th>Abreviatura de la carrera</th>
+                <th>Abreviatura</th>
                 
             </tr>
         </thead>
