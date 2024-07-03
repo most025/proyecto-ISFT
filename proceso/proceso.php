@@ -1,5 +1,5 @@
 <?php
-include('conexion.php');
+include('../conexion.php');
 
 $NombreCarrera = $_POST['Ncarrera'];
 $AbrebiaturaCarrera = $_POST['Abrev'];
