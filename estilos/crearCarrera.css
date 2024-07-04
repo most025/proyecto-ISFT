@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5;
+}
+
+/* Estilos para el menú de navegación */
+main {
+  background-color: #ff4500;
+  padding: 10px 0;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+main ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+main ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+main ul li a:hover {
+  background-color: #de2e03;
+}
+
+/* Estilo para el formulario */
+div form {
+  background-color: #fff; /* Define el color de fondo del formulario */
+  padding: 20px; /* Añade padding alrededor del formulario */
+  border-radius: 5px; /* Redondea las esquinas del formulario */
+  width: 50%; /* Define el ancho del formulario al 50% del ancho disponible */
+  margin: auto; /* Centra el formulario automáticamente */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al formulario para un aspecto más profesional */
+}
+
+/* Estilo para los campos de entrada del formulario */
+div form input {
+  width: 100%; /* Hace que los campos de entrada ocupen todo el ancho disponible */
+  padding: 10px; /* Añade padding alrededor de los campos de entrada */
+  margin-bottom: 10px; /* Añade un margen debajo de cada campo de entrada */
+  border-radius: 5px; /* Redondea las esquinas de los campos de entrada */
+  border: 1px solid #ccc; /* Añade un borde sutil a los campos de entrada */
+}
+
+/* Estilo para el botón de envío del formulario */
+div form input[type="submit"] {
+  background-color: #007bff; /* Define el color de fondo del botón */
+  color: #fff; /* Define el color del texto del botón */
+  cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del botón */
+  border: none; /* Elimina el borde del botón */
+  transition: background-color 0.3s ease; /* Añade una transición suave al cambiar el color de fondo */
+}
+
+/* Estilo para el botón de envío del formulario al pasar el cursor por encima */
+div form input[type="submit"]:hover {
+  background-color: #0056b3; /* Oscurece el color de fondo del botón cuando se pasa el cursor por encima */
+}
