@@ -4,32 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../estilos/crearCarrera.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/crearCarrera.css" />
   </head>
   <body>
     <main>
       <ul>
-        <li><b><a href="../index.html">Inicio</a></b></li>
-        <li><b><a href="../carreras/crearCarrera.html">Crear Carrera</a></b></li>
-        <li><b><a href="../carreras/SuprimirCarrera.php">Eliminar Carrera</a></b></li>
-        <li><b><a href="../carreras/ActualizarCarreras.php">Modificar Carrera</a></b></li>
-        <li><b><a href="../carreras/ListadoCarreras.php">Listado de Carreras</a></b></li>
+        <li>
+          <b><a href="../index.html">Inicio</a></b>
+        </li>
+        <li>
+          <b><a href="../carreras/crearCarrera.html">Crear Carrera</a></b>
+        </li>
+        <li>
+          <b
+            ><a href="../carreras/ActualizarCarreras.php"
+              >Modificar y Eliminar Carrera</a
+            ></b
+          >
+        </li>
+        <li>
+          <b
+            ><a href="../carreras/ListadoCarreras.php"
+              >Listado de Carreras</a
+            ></b
+          >
+        </li>
       </ul>
     </main>
-    <br>
+    <br />
     <div>
-      
-    <form action="../proceso/proceso.php" method="post">
-      <p>Nombre de Carrera:</p>
-      <input type="text"name="Ncarrera" id=""placeholder="Ingrese el nombre de la carrera"/>
+      <form action="../proceso/proceso.php" method="post">
+        <p>Nombre de Carrera:</p>
+        <input
+          type="text"
+          class="form-control"
+          name="Ncarrera"
+          id=""
+          placeholder="Ingrese el nombre de la carrera"
+        />
 
-      <p>Abreviatura de carrera</p>
-      <input type="text" name="Abrev" id="" placeholder="ingrese la duración de la carrera" min="2" max="6"/>
-     
+        <p>Abreviatura de carrera</p>
+        <input
+          type="text"
+          class="form-control"
+          name="Abrev"
+          id=""
+          placeholder="ingrese la duración de la carrera"
+        />
 
-      <input type="submit" value="Enviar" />
-    </form>
-  </div>
+        <input type="submit" class="btn btn-primary" value="Enviar" />
+      </form>
+    </div>
   </body>
 </html>

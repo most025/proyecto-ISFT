@@ -92,6 +92,14 @@ button {
 button:hover {
   transform: scale(1.1); /* Zoom al 110% cuando el cursor está sobre el botón */
 }
+.btn-danger{
+  background-color: #dc143c;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease
+}
 td button a {
   color: #ffffff;
   text-decoration: none;
@@ -103,3 +111,4 @@ div {
   background-color: white;
   margin: 0 auto;
 }
+

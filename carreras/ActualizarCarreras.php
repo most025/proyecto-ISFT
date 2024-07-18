@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/ActualizarCarrera.css">
 
 </head>
@@ -24,8 +25,7 @@
         <ul>
             <li><b><a href="../index.html">Inicio</a></b></li>
             <li><b><a href="../carreras/crearCarrera.html">Crear Carrera</a></b></li>
-            <li><b><a href="../carreras/SuprimirCarrera.php">Eliminar Carrera</a></b></li>
-            <li><b><a href="../carreras/ActualizarCarreras.php">Modificar Carrera</a></b></li>
+            <li><b><a href="../carreras/ActualizarCarreras.php">Modificar y Eliminar Carreras</a></b></li>
             <li><b><a href="../carreras/ListadoCarreras.php">Listado de Carreras</a></b></li>
         </ul>
     </main><br>
@@ -55,9 +55,7 @@
                         <td><?php echo $filas['descripcion']; ?></td>
                         <td>
                             <button><?php echo "<a href='../carreras/formActualizar.php?id=" . $filas['id'] . "'>Actualizar</a>"; ?></button>
-                            <!--Nota: crea otro formulario para actualizar los datos y poder guardarlos
-                        pero usa de referencia el formulario de creacion de carreras no le incluyas la barra de navegacion-->
-
+                            <button class="btn btn-danger"><a href="../proceso/procesoSuprimir.php?id=<?php echo $filas['id']; ?>" onClick="return confirm('¿Seguro de esta acción? ID <?php echo $filas['id']; ?> será eliminado y una vez eliminado no se podrá recuperar...');">Eliminar</a></button>
 
                         </td>
 
@@ -69,6 +67,7 @@
 
         </table>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <?php
     //Esta función cierra una conexión previamente abierta a una base de datos.
     mysqli_close($conexion);
