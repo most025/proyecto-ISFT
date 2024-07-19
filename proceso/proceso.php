@@ -12,13 +12,13 @@ if (!($sentenciaPreparada = mysqli_prepare($conexion,$consultaSQL))) {
     echo "Falló la preparación: (" . $conexion->errno . ") " . $conexion->error;
 } else {
     // Vinculación de parámetros
-    $sentenciaPreoarada->bind_param("ss", $NombreCarrera, $AbrebiaturaCarrera);
+    $sentenciaPreparada->bind_param("ss", $NombreCarrera, $AbrebiaturaCarrera);
 
     // Ejecución de la sentencia
     if ($sentenciaPreparada->execute()) {
         echo "Los datos se han guardado correctamente";
         // Redirige al usuario a la página de inicio después de guardar los datos
-        header('Location: opCarreras.html');
+        header('Location:../opCarreras.html');
     } else {
         echo "Se ha producido un error: " . $sentenciaPreparada->error;
     }
