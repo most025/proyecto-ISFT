@@ -30,9 +30,9 @@
         </ul>
     </main><br>
     <div>
-        <table border="1">
+        <table class="table table-hover" border="1">
             <thead>
-                <tr>
+                <tr class="table-warning">
 
                     <th><b>Nombre de la Carrera</b></th>
                     <th><b>Abreviatura</b></th>
@@ -55,7 +55,12 @@
                         <td><?php echo $filas['descripcion']; ?></td>
                         <td>
                             <button><?php echo "<a href='../carreras/formActualizar.php?id=" . $filas['id'] . "'>Actualizar</a>"; ?></button>
-                            <button class="btn btn-danger"><a href="../proceso/procesoSuprimir.php?php echo $filas['id']; ?>" onClick="return confirm('¿Seguro de esta acción? ID <?php echo $filas['id']; ?> será eliminado y una vez eliminado no se podrá recuperar...');">Eliminar</a></button>
+                            <button class="btn btn-danger">
+                                <a href="../proceso/procesoSuprimir.php?id=<?php echo $filas['id']; ?>" onClick="return confirm('¿Seguro de esta acción? ID <?php echo $filas['id']; ?> será eliminado y una vez eliminado no se podrá recuperar...');">
+                                    Eliminar
+                                </a>
+                            </button>
+
 
                         </td>
 
