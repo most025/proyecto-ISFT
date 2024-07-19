@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/ListadoCarreras.css">
-    <title>Document</title>
+    <title>Modulo Carreras</title>
 </head>
 
 <body>
@@ -13,19 +13,13 @@
     include("../conexion.php");
     $sql = "SELECT * FROM carreras";
     $resultado = mysqli_query($conexion, $sql);
-    /*
-    Esta función realiza una consulta a la base de datos. 
-    $conexion es un objeto que representa la conexión a una base de datos MySQL 
-    y $sql es la consulta SQL que quieres ejecutar.
-    */
     ?>
     <main>
         <!--Menu del modulo carrera-->
         <ul>
             <li><b><a href="../index.html">Inicio</a></b></li>
             <li><b><a href="../carreras/crearCarrera.html">Crear Carrera</a></b></li>
-            <li><b><a href="../carreras/SuprimirCarrera.php">Eliminar Carrera</a></b></li>
-            <li><b><a href="../carreras/ActualizarCarreras.php">Modificar Carrera</a></b></li>
+            <li><b><a href="../carreras/ActualizarCarreras.php">Modificar y Eliminar Carreras</a></b></li>
             <li><b><a href="../carreras/ListadoCarreras.php">Listado de Carreras</a></b></li>
         </ul>
     </main>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modulo Carreras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/ActualizarCarrera.css">
 
@@ -55,7 +55,7 @@
                         <td><?php echo $filas['descripcion']; ?></td>
                         <td>
                             <button><?php echo "<a href='../carreras/formActualizar.php?id=" . $filas['id'] . "'>Actualizar</a>"; ?></button>
-                            <button class="btn btn-danger"><a href="../proceso/procesoSuprimir.php?id=<?php echo $filas['id']; ?>" onClick="return confirm('¿Seguro de esta acción? ID <?php echo $filas['id']; ?> será eliminado y una vez eliminado no se podrá recuperar...');">Eliminar</a></button>
+                            <button class="btn btn-danger"><a href="../proceso/procesoSuprimir.php?php echo $filas['id']; ?>" onClick="return confirm('¿Seguro de esta acción? ID <?php echo $filas['id']; ?> será eliminado y una vez eliminado no se podrá recuperar...');">Eliminar</a></button>
 
                         </td>
 
