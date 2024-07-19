@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
             el usuario sera redirigido al menu de "opcarreras.html".
             */
             $msg = 'La eliminación del registro ha sido exitosa';
-            header('Location: ../carreras/ActualizarCarreras.php');
+            header('Location:../carreras/ActualizarCarreras.php');
         } else {
             $msg = 'Ocurrió un error durante la eliminación';
         }
