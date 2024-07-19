@@ -1,6 +1,9 @@
 # proyecto-ISFT
 # modulo carreras
-* Implementacion de la funcionalidad de crear carreras
-* Implementacion de la funcionalidad de eliminar registros de carreras.
-* Implementacion de la funcionalidad de modificar los registros de carreras.
-* Implementacon de la funcionalidad para el listado de carreras.
+## CORRECCIONES:
+* se agregaron correcciones en el codigo del proceso del formulario para ingresar carreras. 
+
+* Se unificaron las secciones de las operaciones eliminar y actualizar en una sola.
+
+* Se corriguieron algunas errores en el proceso de eliminacion del boton eliminar. 
+
