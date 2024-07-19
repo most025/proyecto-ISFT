@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
 $usuario = "root";
-$clave = "291297";
+$clave = "";
 $bd = "adm_escuela";
 $puerto = 3307;
 
