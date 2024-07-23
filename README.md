@@ -5,5 +5,6 @@
 
 * Se unificaron las secciones de las operaciones eliminar y actualizar en una sola.
 
-* Se corriguieron algunas errores en el proceso de eliminacion del boton eliminar. 
+* Se corriguieron algunas errores en el proceso de eliminacion del boton eliminar.
+
 
