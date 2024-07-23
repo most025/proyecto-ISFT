@@ -32,7 +32,7 @@
     <div>
         <table class="table table-hover" border="1">
             <thead>
-                <tr class="table-warning">
+                <tr class="table-dark">
 
                     <th><b>Nombre de la Carrera</b></th>
                     <th><b>Abreviatura</b></th>

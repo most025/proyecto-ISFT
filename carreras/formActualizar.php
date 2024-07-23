@@ -7,6 +7,7 @@ include("../conexion.php");
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../estilos/formActualizar.css">
   <title>Modulo Carreras</title>
 </head>
@@ -55,19 +56,20 @@ include("../conexion.php");
     mysqli_close($conexion);
   }
   ?>
-
-  <form action="" method="post">
+<br>
+  <form class="form-group" action="" method="post">
     <p>Nombre de Carrera:</p>
-    <input type="text" name="Ncarrera" value="<?php echo $NombreCarrera; ?>" placeholder="Ingrese el nombre de la carrera" />
+    <input class="form-control" type="text" name="Ncarrera" value="<?php echo $NombreCarrera; ?>" placeholder="Ingrese el nombre de la carrera" />
 
     <p>Abreviatura de Materia:</p>
-    <input type="text" name="Abrev" value="<?php echo $AbreviaturaCarrera; ?>" placeholder="Ingrese la abreviatura de la carrera" />
+    <input class="form-control"  type="text" name="Abrev" value="<?php echo $AbreviaturaCarrera; ?>" placeholder="Ingrese la abreviatura de la carrera" />
     <input type="hidden" name="id" value="<?php echo $id; ?>">
 
-    <input type="submit" name="enviar" value="Guardar cambios" />
+    <input class="btn btn-primary" type="submit" name="enviar" value="Guardar cambios" />
 
     <button><a href="../carreras/ActualizarCarreras.php">Volver</a></button>
   </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

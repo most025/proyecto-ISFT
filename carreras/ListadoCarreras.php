@@ -30,7 +30,7 @@
         <br>
         <table class="table table-hover" border="1">
             <thead id="color1">
-                <tr  class="table-warning">
+                <tr  class="table-dark">
                     <th scope="row">Nombre de la carrera</th>
                     <th>Abreviatura</th>
                 </tr>

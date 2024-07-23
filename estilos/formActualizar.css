@@ -33,28 +33,20 @@ body {
 
   }
 
-  input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
+ 
+  
 button{
   background-color: #ff0000;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
+  
 }
 
-button a:hover{
+button:hover{
   background-color: #8b0000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 
