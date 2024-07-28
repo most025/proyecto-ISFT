@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -15,18 +15,15 @@
         <form class="form-group" action="" method="post">
           <p>Nombre</p>
           <input type="text" name="" id="">
-          
-
-          
           <p class="form-label mt-4">Fecha de inicio</p>
-          <input type="date" name="" id="">
+          <input class="" type="date" name="" id="">
           <p>Fecha de fin</p>
-          <input type="date" name="" id=""><br>
-          <input class="btn btn-primary" type="submit" value="Enviar" />
+          <input class="" type="date" name="" id="">
           <p class="form-label mt-4">Profesor</p>
           <input class="form-control" type="text" name="" placeholder="Ingrese " />
           <p class="form-label mt-4">Tipo de licencia</p>
-          <input class="form-control" type="text" name="" placeholder="Ingrese " />
+          <input class="form-control" type="text" name="" placeholder="Ingrese " /><br>
+          <input class="btn btn-primary" type="submit" value="Enviar" />
         </form>
       </b>
     </div>
