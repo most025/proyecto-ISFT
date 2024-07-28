@@ -14,35 +14,53 @@ include("../conexion.php");
     $SQl = "SELECT * FROM tipos_licencias";
     $resultado = mysqli_query($conexion, $SQl);
     ?>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Tipo</th>
-                <th>Aciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            while ($filas = mysqli_fetch_assoc($resultado)) {
-            ?>
-                <tr>
-                    <td><?php print_r($filas['id']);?></td>
-                    <td><?php print_r($filas['tipodelicencia']);?></td>
-                    <td>
-                        <button><a href="">Eliminar</a></button>
-                        <button><a href="">Actualizar</a></button>
-                    </td>
-                </tr>
-            <?php
-            }
-            ?>
-        </tbody>
+    <section class="content mt-3">
+        <div class="row m-auto">
+            <div class="col-sm">
+                <div class="card rounded-2 border-0">
+                    <div class="card-header bg-dark text-white pb-0">
+                        <h5 class="d-inline-block">Listado de tipos de licencias</h5>
+                        <a class="btn btn-primary float-right mb-2" href="carrera_crea.php">Registro de Carreras</a>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table id="example" class="table table-striped table-sm" border="1">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tipo</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                while ($filas = mysqli_fetch_assoc($resultado)) {
+                                ?>
+                                    <tr class="col-sm">
+                                        <td><?php print_r($filas['id']); ?></td>
+                                        <td><?php print_r($filas['tipodelicencia']); ?></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button class="btn btn-warning btn-sm"><a href="">Actualizar</a></button>
+                                                <button class="btn btn-danger btn-sm"><a href="">Eliminar</a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <?php
+                                }
+                                ?>
+                            </tbody>
 
-    </table>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 <?php
 mysqli_close($conexion);
 ?>
+
 </html>
