@@ -2,10 +2,9 @@
 $servidor = "localhost";
 $usuario = "root";
 $clave = "";
-$bd = "adm_escuela";
-$puerto = 3307;
+$bd = "abm_escuela";
 
-$conexion = mysqli_connect($servidor, $usuario, $clave, $bd, $puerto);
+$conexion = mysqli_connect($servidor, $usuario, $clave, $bd);
 
 if ($conexion->connect_error) {
 	die("Conexion fallida: " . $conexion->connect_error);
