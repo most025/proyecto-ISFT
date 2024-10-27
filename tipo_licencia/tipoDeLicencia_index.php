@@ -1,66 +1,42 @@
-<?php
-include("../conexion.php");
-?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-<body>
-    <?php
-    $SQl = "SELECT * FROM tipos_licencias";
-    $resultado = mysqli_query($conexion, $SQl);
-    ?>
-    <section class="content mt-3">
-        <div class="row m-auto">
-            <div class="col-sm">
-                <div class="card rounded-2 border-0">
-                    <div class="card-header bg-dark text-white pb-0">
-                        <h5 class="d-inline-block">Listado de tipos de licencias</h5>
-                        <a class="btn btn-primary float-right mb-2" href="carrera_crea.php">Registro de Carreras</a>
-                    </div>
-                    <div class="card-body table-responsive">
-                        <table id="example" class="table table-striped table-sm" border="1">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th>#</th>
-                                    <th>Tipo</th>
-                                    <th>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                while ($filas = mysqli_fetch_assoc($resultado)) {
-                                ?>
-                                    <tr class="col-sm">
-                                        <td><?php print_r($filas['id']); ?></td>
-                                        <td><?php print_r($filas['tipodelicencia']); ?></td>
-                                        <td class="text-center">
-                                            <div class="btn-group">
-                                                <button class="btn btn-warning btn-sm"><a href="">Actualizar</a></button>
-                                                <button class="btn btn-danger btn-sm"><a href="">Eliminar</a></button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                <?php
-                                }
-                                ?>
-                            </tbody>
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
 
-                        </table>
-                    </div>
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main></main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-</body>
-<?php
-mysqli_close($conexion);
-?>
-
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
