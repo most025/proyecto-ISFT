@@ -1,12 +1,17 @@
+:root{
+  --color-del-fondo-del-sistema: #b59f78;
+  --color-de-barra-superior: #ff4500;
+  --color-hover-de-barra-superior: #de2e01;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff0f5;
+  background-color: var(--color-del-fondo-del-sistema);
 }
 
 nav {
-  background-color: #ff4500;
+  background-color: var(--color-de-barra-superior);
   padding: 10px 0;
   justify-content: space-around;
   padding: 1rem 0;
