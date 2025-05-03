@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --color-de-barra-superior: #ff4500;
+  --color-hover-de-barra-superior: #de2e01;
+  --color-de-fondo: #b59f78;
+  --color-de-texto: #FAF6E3;
+
+/*********************Fuentes****************************/
+  --fuente-del-sistema: 'Roboto', sans-serif;
+}
+
+body {
+  font-family:var(--fuente-del-sistema);
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-de-fondo);
+}
+nav {
+  background-color: var(--color-de-barra-superior);
+  padding: 10px 0;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-de-texto);
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: var(--color-hover-de-barra-superior);
+}
