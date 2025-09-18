@@ -14,7 +14,7 @@
     <?php
     include("../conexion.php"); //esta funcion permite incluir el archivo de conexion ('conexion.php').
     $sql = "SELECT * FROM carreras"; //variable que contiene la consulta sql
-    $coman = mysqli_query($conexion, $sql);
+    $consultaSQL = mysqli_query($conexion, $sql);
     /*
     Esta función realiza una consulta a la base de datos. 
     $conexion es un objeto que representa la conexión a una base de datos MySQL 
@@ -41,11 +41,11 @@
             </thead>
             <tbody>
                 <?php
-                while ($filas = mysqli_fetch_assoc($coman)) {
+                while ($filas = mysqli_fetch_assoc($consultaSQL)) {
                     /*
-                mysqli_fetch_assoc($coman): Esta función devuelve una fila de resultados como un array asociativo. 
-                $coman es el resultado de la consulta a la base de datos que se realizó anteriormente.
-                
+                mysqli_fetch_assoc($consultaSQL): Esta función devuelve una fila de resultados como un array asociativo. 
+                $consultaSQL es el resultado de la consulta a la base de datos que se realizó anteriormente.
+
                 */
                 ?>
 
