@@ -48,8 +48,8 @@
                 ?>
                     <tr>
 
-                        <td><?php echo $filas['nombre'] ?></td>
-                        <td><?php echo $filas['descripcion']; ?></td>
+                        <td><?=$filas['nombre'] ?>  </td>
+                        <td><?= $filas['descripcion']; ?></td>
                     </tr>
                 <?php
                 }

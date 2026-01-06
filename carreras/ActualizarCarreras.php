@@ -51,8 +51,8 @@
 
                     <tr>
 
-                        <td><?php echo $filas['nombre'] ?></td>
-                        <td><?php echo $filas['descripcion']; ?></td>
+                        <td><?= $filas['nombre'] ?></td>
+                        <td><?= $filas['descripcion']; ?></td>
                         <td>
                             <button><?php echo "<a href='../carreras/formActualizar.php?id=" . $filas['id'] . "'>Actualizar</a>"; ?></button>
                             <button class="btn btn-danger">
